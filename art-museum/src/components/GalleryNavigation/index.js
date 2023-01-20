@@ -1,8 +1,13 @@
-import harvardArt from "../../data/harvardart";
+import { NavLink } from "react-router-dom";
 
- const GalleryNavigation = (gallery) => {
+ const GalleryNavigation = () => {
+    let gallery = this.props
     console.log(gallery)
-    // return <h1>{gallery}</h1>
+    return  (<div>
+        {gallery.map((ele) => (
+            <h2>ele</h2>
+        ))}
+    </div>)
 }
 
 export default GalleryNavigation;
